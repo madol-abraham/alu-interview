@@ -1,23 +1,16 @@
 #!/usr/bin/python3
-
-'''minimum operations'''
-import math
+"""minimum operations."""
 
 
-def minOperations(n):
-    '''minimum operations to get n to 1'''
-    if n <= 1:
-        return 0
+def minimum_operation(n):
+    """returns the fewest number of operation."""
 
-    operations = 0
-    for i in range(2, int(math.sqrt(abs(n))) + 1):
-        while n % i == 0:
-            operations += i
-            n //= i
-
-    if n > 1:
-        operations += n
-
-    return operations
-
+    a = 0
+    b = 2
+    while n > 1:
+        while n % b == 0:
+            a += b
+            n = n / b
+        b += 1
+    return a
 
