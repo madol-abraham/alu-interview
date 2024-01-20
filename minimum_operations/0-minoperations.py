@@ -5,9 +5,7 @@ minimum operations
 
 
 def minOperations(n):
-    """
-    returns the fewest number of operation
-    """
+#returns the fewest number of operation
     a = 0
     b = 2
     while n > 1:
@@ -16,4 +14,4 @@ def minOperations(n):
             n = n / b
         b += 1
     return a
-#prepared by Eng. madol Abraham 
+#prepared by Eng. madol Abraham. 
