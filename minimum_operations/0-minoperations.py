@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """
-minimum operations
+Minimum Operations
 """
 
 
-def minOperations(n):
-#returns the fewest number of operation
+def min_operations(n):
+    """
+    Returns the fewest number of operations
+    """
     a = 0
     b = 2
     while n > 1:
@@ -14,4 +16,4 @@ def minOperations(n):
             n = n / b
         b += 1
     return a
-#prepared by Eng. madol Abraham. 
+
